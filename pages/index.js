@@ -56,7 +56,7 @@ const index = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollLength,count]);
+  }, [scrollLength, count]);
 
   //data container
 
@@ -71,7 +71,9 @@ const index = () => {
 
   return (
     <div
-      className={`w-full h-[700vh] bg-[rgb(${bgcolor2})] duration-300`}
+      className={`w-full h-[700vh] ${
+        scrollLength < 700 && " bg-[rgb(27,38,54)]"
+      } duration-300`}
       onScroll={() => {
         setCount(count + 1);
       }}
