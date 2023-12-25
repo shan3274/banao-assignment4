@@ -15,7 +15,7 @@ const Page5 = ({ bgcolor }) => {
   console.log(bgcolor);
   return (
     <div className="w-full h-full flex items-end justify-center">
-      <div className={` w-[45%] h-[100vh] fixed left-0 top-0 bg-[${bgcolor}] z-[3]`}>
+      <div className={` w-[45%] h-[100vh] fixed left-0 top-0 bg-[#022745] z-[3]`}>
         <div className="relative w-full h-full flex flex-col justify-end">
           <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1]">
             <Prograss />

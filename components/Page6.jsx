@@ -21,7 +21,7 @@ const Page6 = ({ bgcolor }) => {
   return (
     <div className="w-full h-full flex items-end justify-center">
       <div
-        className={` w-[45%] h-[100vh] fixed top-0 left-0 bg-[${bgcolor}] z-[3]`}
+        className={` w-[45%] h-[100vh] fixed top-0 left-0 bg-[#a10e46] z-[3]`}
       >
         <div className="relative w-full h-full flex flex-col justify-end">
           <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1]">

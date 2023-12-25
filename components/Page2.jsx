@@ -16,7 +16,7 @@ const Page2 = ({ bgcolor }) => {
   const [address3, setAddress3] = useState("View Case Study");
   return (
     <div className="w-full h-full flex items-end justify-center">
-      <div className={` w-[45%] h-[100vh] fixed top-0 left-0 bg-[${bgcolor}]`}>
+      <div className={` w-[45%] h-[100vh] fixed top-0 left-0 bg-[#071169]`}>
         <div className="relative w-full h-full flex flex-col justify-end">
           <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1]">
             <Prograss />
