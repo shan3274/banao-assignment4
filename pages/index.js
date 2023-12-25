@@ -15,6 +15,7 @@ const index = () => {
   const [scrollLength, setScrollLength] = useState(0);
   const maxScrollLength = 7000; // Set the total length of scroll in pixels
 
+  const [count, setCount] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
       // Update scrollLength based on the window scroll position
@@ -29,12 +30,10 @@ const index = () => {
     if (scrollLength < 700) {
       setBgcolor("#294366");
       setBgcolor2("27,38,54");
-
     }
     if (scrollLength > 700 && scrollLength < 1400) {
       setBgcolor("#071169");
       setBgcolor2("25,39,148");
-
     }
     if (scrollLength > 1400 && scrollLength < 2100) {
       setBgcolor("#6245f5");
@@ -57,7 +56,7 @@ const index = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollLength]);
+  }, [scrollLength,count]);
 
   //data container
 
@@ -71,12 +70,23 @@ const index = () => {
   const [address3, setAddress3] = useState("View Case Study");
 
   return (
-    <div className={`w-full h-[700vh] bg-[rgb(${bgcolor2})] duration-300`}>
+    <div
+      className={`w-full h-[700vh] bg-[rgb(${bgcolor2})] duration-300`}
+      onScroll={() => {
+        setCount(count + 1);
+      }}
+    >
       {scrollLength < 700 && <Page1 bgcolor={bgcolor} />}
       {scrollLength > 700 && scrollLength < 1400 && <Page2 bgcolor={bgcolor} />}
-      {scrollLength > 1400 && scrollLength < 2100 && <Page3 bgcolor={bgcolor} />}
-      {scrollLength > 2100 && scrollLength < 2800 && <Page4 bgcolor={bgcolor} />}
-      {scrollLength > 2800 && scrollLength < 3500 && <Page5 bgcolor={bgcolor} />}
+      {scrollLength > 1400 && scrollLength < 2100 && (
+        <Page3 bgcolor={bgcolor} />
+      )}
+      {scrollLength > 2100 && scrollLength < 2800 && (
+        <Page4 bgcolor={bgcolor} />
+      )}
+      {scrollLength > 2800 && scrollLength < 3500 && (
+        <Page5 bgcolor={bgcolor} />
+      )}
       {scrollLength > 3500 && <Page6 bgcolor={bgcolor} />}
     </div>
   );
