@@ -8,7 +8,7 @@ import Page1Right from "./Page6Right";
 import img1 from "@/public/melltoo-img1.png";
 import img2 from "@/public/melltoo-img2.png";
 
-const Page6 = ({ bgcolor }) => {
+const Page6 = () => {
   const [head1, setHead1] = useState("Biggest Classifieds");
   const [head2, setHead2] = useState("East Asia");
   const [head3, setHead3] = useState("Countries");
@@ -17,7 +17,7 @@ const Page6 = ({ bgcolor }) => {
     "We are the best web development company in the world"
   );
   const [address3, setAddress3] = useState("Coming soon");
-  console.log(bgcolor);
+
   return (
     <div className="w-full h-full flex items-end justify-center">
       <div

@@ -8,7 +8,7 @@ import img1 from "@/public/nexgtv-entertainment-mobile-app-development.png";
 import img2 from "@/public/nexgtv-mobile-app-ui-design.png";
 import Page1Right from "./Page1Right";
 
-const Page1 = ({ bgcolor }) => {
+const Page1 = () => {
   const [head2, setHead2] = useState("25M+ Downloads");
   const [head3, setHead3] = useState("on appstore & google playstore");
   const [address1, setAddress1] = useState("ABC 456");
@@ -16,7 +16,7 @@ const Page1 = ({ bgcolor }) => {
     "We are the best web development company in the world"
   );
   const [address3, setAddress3] = useState("View Case Study");
-  console.log(bgcolor);
+
   return (
     <div className="w-full h-full flex items-end justify-center">
       <div className={` w-[45%] h-[100vh] fixed top-0 left-0 bg-[#294366]`}>

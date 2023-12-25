@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import nasa from "@/public/nasa-mobile-app.png";
 import Image from "next/image";
 import Page2Right from "./Page2Right";
-const Page2 = ({ bgcolor }) => {
+const Page2 = () => {
   const [head1, setHead1] = useState("Prowered by advance");
   const [head2, setHead2] = useState("NASA");
   const [head3, setHead3] = useState("Algorithms");

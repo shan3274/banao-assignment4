@@ -3,7 +3,7 @@ import Prograss from "@/components/Prograss";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import Page5Right from "./Page5Right";
-const Page5 = ({ bgcolor }) => {
+const Page5 = () => {
   const [head1, setHead1] = useState("Developing ERP Solution for");
   const [head2, setHead2] = useState("Text Headline");
   const [head3, setHead3] = useState("in furniture industry");
@@ -12,7 +12,7 @@ const Page5 = ({ bgcolor }) => {
     "Best since 2017 We offer wide range of web development and app development"
   );
   const [address3, setAddress3] = useState("View Case Study");
-  console.log(bgcolor);
+
   return (
     <div className="w-full h-full flex items-end justify-center">
       <div className={` w-[45%] h-[100vh] fixed left-0 top-0 bg-[#022745] z-[3]`}>

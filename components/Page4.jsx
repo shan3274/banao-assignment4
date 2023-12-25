@@ -3,7 +3,7 @@ import Prograss from "@/components/Prograss";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import Page4Right from "./Page4Right";
-const Page4 = ({ bgcolor }) => {
+const Page4 = () => {
   const [head1, setHead1] = useState("Redefining");
   const [head2, setHead2] = useState("UX Strategy");
   const [head3, setHead3] = useState("and UI design");
@@ -12,7 +12,7 @@ const Page4 = ({ bgcolor }) => {
     "We are the best web development company in the world"
   );
   const [address3, setAddress3] = useState("View Case Study");
-  console.log(bgcolor);
+
   return (
     <div className="w-full h-full flex items-end justify-center">
       <div className={` w-[45%] h-[100vh] fixed left-0 top-0 bg-[#541899] z-[3]`}>

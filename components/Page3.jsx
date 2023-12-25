@@ -4,7 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { motion } from "framer-motion";
 import Page3Right from "./Page3Right";
 
-const Page3 = ({ bgcolor }) => {
+const Page3 = () => {
   const [head1, setHead1] = useState("The Next Big");
   const [head2, setHead2] = useState("Blockchain");
   const [head3, setHead3] = useState("Revolution");
@@ -13,7 +13,7 @@ const Page3 = ({ bgcolor }) => {
     "We are the best web development company in the world"
   );
   const [address3, setAddress3] = useState("View Case Study");
-  console.log(bgcolor);
+ 
   return (
     <div className="w-full h-full flex items-end justify-center">
       <div className={` w-[45%] h-[100vh] fixed top-0 left-0 bg-[#6245f5]`}>
