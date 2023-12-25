@@ -72,7 +72,12 @@ const index = () => {
   return (
     <div
       className={`w-full h-[700vh] ${
-        scrollLength < 700 && " bg-[rgb(27,38,54)]"
+        (scrollLength < 700 && " bg-[rgb(27,38,54)]") ||
+        (scrollLength > 700 && scrollLength < 1400 && "bg-[rgb(25,39,148)]") ||
+        (scrollLength > 1400 && scrollLength < 2100 && "bg-[rgb(46,24,153)]") ||
+        (scrollLength > 2100 && scrollLength < 2800 && "bg-[rgb(156,101,219)]") ||
+        (scrollLength > 2800 && scrollLength < 3500 && "bg-[rgb(16,107,181)]") ||
+        (scrollLength > 3500 && "bg-[rgb(189,89,127)]")
       } duration-300`}
       onScroll={() => {
         setCount(count + 1);
