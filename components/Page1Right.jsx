@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const Page1Right = () => {
   return (
-    <div className="w-full h-full flex items-center justify-center">
-      <div className="sm:w-[90%] h-full flex items-center justify-center z-[2] relative top-[50px]">
+    <div className="w-full h-full flex items-center justify-center z-[1]">
+      <div className="sm:w-[90%] h-full flex items-center justify-center z-[1] relative top-[50px]">
         <motion.div
           animate={{ y: 50 }}
           transition={{ type: "spring", stiffness: 100 }}

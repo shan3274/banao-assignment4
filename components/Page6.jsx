@@ -7,6 +7,7 @@ import Image from "next/image";
 import Page1Right from "./Page6Right";
 import img1 from "@/public/melltoo-img1.png";
 import img2 from "@/public/melltoo-img2.png";
+import Page6Right from "@/components/Page6Right";
 
 const Page6 = () => {
   const [head1, setHead1] = useState("Biggest Classifieds");
@@ -56,7 +57,6 @@ const Page6 = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-
             >
               <Image src={logo} width={0} height={0} />
             </motion.div>
@@ -90,8 +90,10 @@ const Page6 = () => {
           </div>
         </div>
       </div>
-      <div className={` sm:w-[55%] w-full h-[100vh] fixed top-0 right-0  z-[2] flex`}>
-        <Page1Right />
+      <div
+        className={` sm:w-[55%] w-full h-[100vh] fixed top-0 right-0  z-[2] flex`}
+      >
+        <Page6Right />
       </div>
     </div>
   );
