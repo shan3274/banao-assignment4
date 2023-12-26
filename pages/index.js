@@ -20,7 +20,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 const index = () => {
   const [scrollLength, setScrollLength] = useState(0);
   const maxScrollLength = 7000; // Set the total length of scroll in pixels
@@ -75,7 +75,7 @@ const index = () => {
           (scrollLength > 3500 && "bg-[rgb(189,89,127)]")
         } duration-300`}
       >
-        {scrollLength < 700 &&  <Page1 />}
+        {scrollLength < 700 && <Page1 />}
         {scrollLength > 700 && scrollLength < 1400 && <Page2 />}
         {scrollLength > 1400 && scrollLength < 2100 && <Page3 />}
         {scrollLength > 2100 && scrollLength < 2800 && <Page4 />}
@@ -90,13 +90,33 @@ const index = () => {
         />
       </div>
       <div className="p-0 m-0 w-full h-screen sm:hidden">
-        <Swiper pagination={true} modules={[Pagination]} className="w-full h-full">
-          <SwiperSlide><Page1/></SwiperSlide>
-          <SwiperSlide><Page2/></SwiperSlide>
-          <SwiperSlide><Page3/></SwiperSlide>
-          <SwiperSlide><Page4/></SwiperSlide>
-          <SwiperSlide><Page5/></SwiperSlide>
-          <SwiperSlide><Page6/></SwiperSlide>
+        <Swiper
+          pagination={true}
+          // autoplay={{
+          //   delay: 2500,
+          //   disableOnInteraction: false,
+          // }}
+          modules={[Pagination, Autoplay]}
+          className="w-full h-full"
+        >
+          <SwiperSlide className="bg-[rgb(27,38,54)]">
+            <Page1 />
+          </SwiperSlide>
+          <SwiperSlide className="bg-[rgb(25,39,148)]">
+            <Page2 />
+          </SwiperSlide>
+          <SwiperSlide className="bg-[rgb(46,24,153)]">
+            <Page3 />
+          </SwiperSlide>
+          <SwiperSlide className="bg-[rgb(156,101,219)]">
+            <Page4 />
+          </SwiperSlide>
+          <SwiperSlide className="bg-[rgb(16,107,181)]">
+            <Page5 />
+          </SwiperSlide>
+          <SwiperSlide className="bg-[rgb(189,89,127)]">
+            <Page6 />
+          </SwiperSlide>
         </Swiper>
       </div>
     </>

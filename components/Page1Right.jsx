@@ -12,25 +12,25 @@ const Page1Right = () => {
         <motion.div
           animate={{ y: 50 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="sm:flex sm:items-end relative  sm:top-[-50px] top-[-200px] "
+          className="sm:flex sm:items-end sm:relative absolute sm:left-0 sm:w-[450px] w-[300px] left-[100px] sm:top-[-50px] top-[-50px] "
         >
           <Image
             src={img2}
             width={0}
             height={0}
-            className="sm:relative sm:left-[100px] sm:w-full w-[500px]  left-[100px]"
+            className="sm:relative sm:left-[100px] sm:w-full   left-[100px]"
           />
         </motion.div>
         <motion.div
           animate={{ y: 100 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex items-end relative sm:top-[-100px] top-[-200px] sm:left-0 "
+          className="flex items-end relative sm:top-[-100px] top-[-200px] sm:left-0 left-[-20%]"
         >
           <Image
             src={img1}
             width={0}
             height={0}
-            className=" relative sm:w-full w-[500px]"
+            className=" relative sm:w-full w-[300px] sm:left-0  left-[-60px]"
           />
         </motion.div>
       </div>
