@@ -30,7 +30,7 @@ const Page1Right = () => {
             src={img1}
             width={0}
             height={0}
-            className=" relative sm:w-full w-[300px] sm:left-0  left-[-60px]"
+            className=" relative sm:w-full w-[270px] sm:left-0  left-[-60px]"
           />
         </motion.div>
       </div>
