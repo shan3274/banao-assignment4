@@ -50,7 +50,7 @@ const Page6 = () => {
               {head3}
             </motion.h2>
           </div>
-          <div className="w-full sm:h-[50%] h-full flex flex-col justify-center items-start gap-3 pl-10">
+          <div className="w-full sm:h-[40%] h-full flex flex-col justify-center items-start gap-3 pl-10">
             <motion.div
               className="sm:relative absolute top-[-10%]"
               initial={{ opacity: 0 }}

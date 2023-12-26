@@ -44,7 +44,7 @@ const Page2 = () => {
               {head3}
             </motion.h2>
           </div>
-          <div className="w-full sm:h-[50%] h-full  flex flex-col justify-center items-start gap-3 pl-10">
+          <div className="w-full sm:h-[40%] h-full  flex flex-col justify-center items-start gap-3 pl-10">
             <motion.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, y: 50 }}
