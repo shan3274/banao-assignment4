@@ -18,13 +18,13 @@ const Page1 = () => {
   const [address3, setAddress3] = useState("View Case Study");
 
   return (
-    <div className="w-full h-full flex items-end justify-center">
-      <div className={` w-[45%] h-[100vh] fixed top-0 left-0 bg-[#294366]`}>
+    <div className="w-full h-full flex items-end justify-center ">
+      <div className={` sm:w-[45%] w-full h-[40%] bottom-0 sm:h-[100vh] fixed  sm:top-0 left-0 bg-[#294366] z-[3]`}>
         <div className="relative w-full h-full flex flex-col justify-end">
-          <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1]">
+          <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1] hidden sm:block">
             <Prograss />
           </div>
-          <div className="w-[400px] h-[400px] absolute right-[-200px] top-[10%] z-[2] flex flex-col justify-center gap-1 ">
+          <div className="w-[400px] h-[400px] absolute right-[-200px] top-[10%] z-[2] hidden sm:flex flex-col justify-center gap-1 ">
             <motion.h1
               animate={{ x: 50 }}
               transition={{ type: "spring", stiffness: 100 }}
@@ -41,14 +41,15 @@ const Page1 = () => {
               {head3}
             </motion.h2>
           </div>
-          <div className="w-full h-[50%] flex flex-col justify-center items-start gap-3 pl-10">
+          <div className="w-full sm:h-[50%] h-[100%]  flex flex-col justify-center items-start gap-3 pl-10">
             <motion.div
              
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
+              className="sm:static absolute top-[-13%] w-[300px]  sm:w-full sm:mb-0"
             >
-              <Image src={logo} width={0} height={0} />
+              <Image src={logo} width={0} height={0}className="bg-white sm:border-none border-[2px] border-[rgb(27,38,54)] rounded-lg sm:rounded-none "/>
             </motion.div>
             <motion.h1
               initial={{ opacity: 0 }}
@@ -80,7 +81,7 @@ const Page1 = () => {
           </div>
         </div>
       </div>
-      <div className={` w-[55%] h-[100vh] fixed top-0 right-0  z-[2] flex`}>
+      <div className={` w-full sm:w-[55%] h-[100vh] fixed top-0 right-0  z-[2] flex`}>
         <Page1Right />
       </div>
     </div>

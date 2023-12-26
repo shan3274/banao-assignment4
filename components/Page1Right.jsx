@@ -8,29 +8,29 @@ import Image from "next/image";
 const Page1Right = () => {
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <div className="w-[90%] h-full flex items-center justify-center z-[2] relative top-[50px]">
+      <div className="sm:w-[90%] h-full flex items-center justify-center z-[2] relative top-[50px]">
         <motion.div
           animate={{ y: 50 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex items-end relative  top-[-50px]"
+          className="sm:flex sm:items-end relative  sm:top-[-50px] top-[-200px] "
         >
           <Image
             src={img2}
             width={0}
             height={0}
-            className="relative left-[100px] "
+            className="sm:relative sm:left-[100px] sm:w-full w-[500px]  left-[100px]"
           />
         </motion.div>
         <motion.div
           animate={{ y: 100 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex items-end relative top-[-100px]"
+          className="flex items-end relative sm:top-[-100px] top-[-200px] sm:left-0 "
         >
           <Image
             src={img1}
             width={0}
             height={0}
-            className=" relative  "
+            className=" relative sm:w-full w-[500px]"
           />
         </motion.div>
       </div>

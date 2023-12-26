@@ -15,13 +15,13 @@ const Page5Right = () => {
         <motion.div
           animate={{ y: -50 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex items-end relative"
+          className="flex items-end relative top-[-25%] right-[10%]"
         >
           <Image
             src={img1}
             width={0}
             height={0}
-            className=" relative"
+            className=" relative "
           />
         </motion.div>
       </div>

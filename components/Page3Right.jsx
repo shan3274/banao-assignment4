@@ -12,19 +12,19 @@ const Page1Right = () => {
         <motion.div
           animate={{ y: 50 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex items-end relative  top-[-50px]"
+          className="flex items-end sm:relative sm:left-0  sm:top-[-50px] absolute w-[90%] left-[-80%] top-0"
         >
           <Image
             src={img2}
             width={0}
             height={0}
-            className="relative left-[70px] w-[300px] top-[140px] "
+            className="sm:relative  right-[100px] sm:left-[70px] sm:w-[300px] sm:top-[140px] "
           />
         </motion.div>
         <motion.div
           animate={{ y: -50 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex items-end relative"
+          className="flex items-end sm:relative w-[90%] absolute sm:top-0 sm:right-0 right-[40%]"
         >
           <Image
             src={img1}

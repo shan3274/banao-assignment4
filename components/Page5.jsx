@@ -15,12 +15,12 @@ const Page5 = () => {
 
   return (
     <div className="w-full h-full flex items-end justify-center">
-      <div className={` w-[45%] h-[100vh] fixed left-0 top-0 bg-[#022745] z-[3]`}>
+      <div className={` sm:w-[45%] w-full h-[50%] bottom-0 sm:h-[100vh] fixed  sm:top-0 left-0 bg-[#022745] z-[3]`}>
         <div className="relative w-full h-full flex flex-col justify-end">
-          <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1]">
+          <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1] sm:block hidden">
             <Prograss />
           </div>
-          <div className="w-[400px] h-[400px] absolute right-[-200px] top-[10%] z-[2] flex flex-col justify-center gap-1 ">
+          <div className="w-[400px] h-[400px] absolute right-[-200px] top-[10%] z-[2] sm:flex flex-col justify-center gap-1  hidden">
             <motion.h2
               animate={{ y: 50 }}
               className=" text-[white] text-[25px] font-[300] relative top-[-50px] right-5 "
@@ -43,7 +43,7 @@ const Page5 = () => {
               {head3}
             </motion.h2>
           </div>
-          <div className="w-full h-[40%] flex flex-col justify-center items-start gap-3 pl-10">
+          <div className="w-full sm:h-[40%] h-[100%] flex flex-col justify-center items-start gap-3 pl-10">
             <motion.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, y: 50 }}
@@ -74,7 +74,7 @@ const Page5 = () => {
           </div>
         </div>
       </div>
-      <div className={` w-[55%] h-[100vh] fixed top-0 right-0  z-[2] flex`}>
+      <div className={` sm:w-[55%] w-full h-[100vh] fixed top-0 right-0  z-[2] flex`}>
         <Page5Right />
       </div>
     </div>

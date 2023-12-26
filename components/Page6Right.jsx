@@ -11,7 +11,7 @@ const Page1Right = () => {
       <motion.div
         animate={{ y: 50 }}
         transition={{ type: "spring", stiffness: 100 }}
-        className="flex items-end relative left-[15%] top-[-50px]"
+        className="flex items-end absolute sm:relative sm:left-[15%] top-[-10%] left-0 z-[2] sm:top-[-50px]"
       >
         <Image
           src={img2}
@@ -23,7 +23,7 @@ const Page1Right = () => {
       <motion.div
         animate={{ y: 100 }}
         transition={{ type: "spring", stiffness: 100 }}
-        className="flex items-end relative left-[15%] top-[-100px]"
+        className="flex items-end absolute top-0 right-[-15%] z-[1] sm:relative sm:left-[15%] sm:top-[-100px]"
       >
         <Image
           src={img1}

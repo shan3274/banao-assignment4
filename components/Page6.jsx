@@ -21,13 +21,13 @@ const Page6 = () => {
   return (
     <div className="w-full h-full flex items-end justify-center">
       <div
-        className={` w-[45%] h-[100vh] fixed top-0 left-0 bg-[#a10e46] z-[3]`}
+        className={` sm:w-[45%] w-full h-[50%] bottom-0 sm:h-[100vh] fixed  sm:top-0 left-0 bg-[#a10e46] z-[3]`}
       >
         <div className="relative w-full h-full flex flex-col justify-end">
-          <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1]">
+          <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1] sm:block hidden">
             <Prograss />
           </div>
-          <div className="w-[400px] h-[400px] absolute right-[-200px] top-[10%] z-[2] flex flex-col justify-center gap-1 ">
+          <div className="w-[400px] h-[400px] absolute right-[-200px] top-[10%] z-[2] sm:flex hidden flex-col justify-center gap-1 ">
             <motion.h2
               animate={{ y: 50 }}
               className=" text-[white] text-[25px] font-[300] relative top-[-50px] "
@@ -50,12 +50,13 @@ const Page6 = () => {
               {head3}
             </motion.h2>
           </div>
-          <div className="w-full h-[50%] flex flex-col justify-center items-start gap-3 pl-10">
+          <div className="w-full sm:h-[50%] h-full flex flex-col justify-center items-start gap-3 pl-10">
             <motion.div
-              className="z-[110]"
+              className="sm:relative absolute top-[-10%]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
+
             >
               <Image src={logo} width={0} height={0} />
             </motion.div>
@@ -89,7 +90,7 @@ const Page6 = () => {
           </div>
         </div>
       </div>
-      <div className={` w-[55%] h-[100vh] fixed top-0 right-0  z-[2] flex`}>
+      <div className={` sm:w-[55%] w-full h-[100vh] fixed top-0 right-0  z-[2] flex`}>
         <Page1Right />
       </div>
     </div>
