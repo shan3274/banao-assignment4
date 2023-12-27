@@ -78,7 +78,7 @@ const Page4Right = () => {
             src={img3}
             width={0}
             height={0}
-            className="absolute sm:hidden   w-[250px] left-[200px] bottom-[340px] "
+            className="absolute sm:hidden   w-[250px] left-[200px] bottom-[300px] "
           />
           <Image
             src={img2}
