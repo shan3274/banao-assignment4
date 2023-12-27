@@ -78,13 +78,13 @@ const Page4Right = () => {
             src={img3}
             width={0}
             height={0}
-            className="absolute sm:hidden   w-[250px] left-[240px] bottom-[400px] "
+            className="absolute sm:hidden   w-[250px] left-[200px] bottom-[340px] "
           />
           <Image
             src={img2}
             width={0}
             height={0}
-            className="relative  sm:left-[-50px] w-[250px] sm:top-[160px] left-[240px] "
+            className="relative  sm:left-[-50px] w-[250px] sm:top-[160px] left-[200px] "
           />
         </motion.div>
         <motion.div
@@ -96,7 +96,7 @@ const Page4Right = () => {
             src={img1}
             width={0}
             height={0}
-            className=" relative w-[250px] bottom-[10px] left-[-250px] sm:left-[80px]"
+            className=" relative w-[250px] bottom-[10px] left-[-180px] sm:left-[80px]"
           />
         </motion.div>
       </div>
