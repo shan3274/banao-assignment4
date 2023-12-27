@@ -53,12 +53,12 @@ const Page6 = () => {
           </div>
           <div className="w-full sm:h-[40%] h-full flex flex-col justify-center items-start gap-3 pl-10">
             <motion.div
-              className="sm:relative absolute top-[-10%]"
+              className="sm:relative absolute top-[-10%] w-[80%]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              <Image src={logo} width={0} height={0} className=" w-[90%] sm:w-full" />
+              <Image src={logo} width={0} height={0} className="  sm:w-full" />
             </motion.div>
             <motion.h1
               initial={{ opacity: 0 }}
