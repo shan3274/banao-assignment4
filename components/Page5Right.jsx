@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Page5Right = () => {
   return (
-    <div className="w-full h-full flex items-center justify-center ">
+    <div className="w-full h-full flex items-center justify-center z-[1] overflow-hidden">
       <div className="w-[100%] h-full flex items-center justify-center  relative top-[50px]">
       <Image src={img2} width={0} height={0} className="z-0 w-[100%] h-full top-[-6.5%] absolute"/> 
       
@@ -15,7 +15,7 @@ const Page5Right = () => {
         <motion.div
           animate={{ y: -50 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex items-end relative top-[-25%] right-[10%]"
+          className="flex items-end relative  top-[-25%] right-[10%] overflow-hiddenr w-full"
         >
           <Image
             src={img1}

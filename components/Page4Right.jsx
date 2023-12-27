@@ -14,7 +14,7 @@ import Image from "next/image";
 
 const Page4Right = () => {
   return (
-    <div className="w-full h-full flex items-center justify-center">
+    <div className="w-full h-full flex items-center justify-center z-[2]">
       <div className="w-[100%] h-full flex items-center justify-center sm:z-[3] z-[4] relative top-[50px]">
         
       <motion.div
@@ -72,13 +72,13 @@ const Page4Right = () => {
       <motion.div
           animate={{ y: 50 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex items-end relative  top-[-50px] "
+          className="flex items-end relative  top-[-50px] z-[2]"
         >
         <Image
             src={img3}
             width={0}
             height={0}
-            className="absolute sm:hidden   w-[250px] left-[200px] bottom-[300px] "
+            className="absolute sm:hidden   w-[250px] left-[200px] bottom-[300px] z-[2] "
           />
           <Image
             src={img2}
@@ -90,13 +90,13 @@ const Page4Right = () => {
         <motion.div
           animate={{ y: -50 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex items-end relative"
+          className="flex items-end relative z-[2]"
         >
           <Image
             src={img1}
             width={0}
             height={0}
-            className=" relative w-[250px] bottom-[10px] left-[-180px] sm:left-[80px]"
+            className=" relative w-[250px] bottom-[10px] left-[-180px] sm:left-[80px] "
           />
         </motion.div>
       </div>
