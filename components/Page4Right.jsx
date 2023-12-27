@@ -15,7 +15,7 @@ import Image from "next/image";
 const Page4Right = () => {
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <div className="w-[100%] h-full flex items-center justify-center z-[2] relative top-[50px]">
+      <div className="w-[100%] h-full flex items-center justify-center sm:z-[3] z-[4] relative top-[50px]">
         
       <motion.div
           animate={{ y: 50 }}
