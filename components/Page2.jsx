@@ -16,7 +16,7 @@ const Page2 = () => {
   const [address3, setAddress3] = useState("View Case Study");
   return (
     <div className="w-full h-full flex items-end justify-center">
-      <div className={` sm:w-[45%] w-full h-[45%] bottom-0 sm:h-[100vh] fixed  sm:top-0 left-0 bg-[#071169] z-[3]`}>
+      <div className={` sm:w-[45%] w-full h-[40%] bottom-0 sm:h-[100vh] fixed  sm:top-0 left-0 bg-[#071169] z-[3]`}>
         <div className="relative w-full h-full flex flex-col justify-end">
           <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1] hidden sm:block">
             <Prograss />
@@ -44,7 +44,7 @@ const Page2 = () => {
               {head3}
             </motion.h2>
           </div>
-          <div className="w-full sm:h-[50%] h-full  flex flex-col justify-center items-start gap-3 pl-10">
+          <div className="w-full sm:h-[40%] h-full  flex flex-col justify-center items-start gap-3 pl-10">
             <motion.h1
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, y: 50 }}

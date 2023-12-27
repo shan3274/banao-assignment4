@@ -15,7 +15,7 @@ const Page5 = () => {
 
   return (
     <div className="w-full h-full flex items-end justify-center">
-      <div className={` sm:w-[45%] w-full h-[50%] bottom-0 sm:h-[100vh] fixed  sm:top-0 left-0 bg-[#022745] z-[3]`}>
+      <div className={` sm:w-[45%] w-full h-[40%] bottom-0 sm:h-[100vh] fixed  sm:top-0 left-0 bg-[#022745] z-[3]`}>
         <div className="relative w-full h-full flex flex-col justify-end">
           <div className="w-[400px] absolute right-[-200px] top-[10%] z-[1] sm:block hidden">
             <Prograss />
