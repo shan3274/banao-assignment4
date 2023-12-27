@@ -47,7 +47,7 @@ const Page1 = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="sm:static absolute top-[-7%] sm:top-[-13%] w-[200px]  sm:w-full sm:mb-0"
+              className="sm:static absolute left-3 sm:left-10 top-[-10%] sm:top-[-13%] w-[200px]  sm:w-full sm:mb-0"
             >
               <Image src={logo} width={0} height={0}className="bg-white sm:border-none border-[2px] border-[rgb(27,38,54)] rounded-lg sm:rounded-none "/>
             </motion.div>
