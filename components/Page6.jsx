@@ -58,7 +58,7 @@ const Page6 = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              <Image src={logo} width={0} height={0} />
+              <Image src={logo} width={0} height={0} className=" w-[70%] sm:w-full" />
             </motion.div>
             <motion.h1
               initial={{ opacity: 0 }}
