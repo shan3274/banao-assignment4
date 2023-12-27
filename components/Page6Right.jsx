@@ -12,13 +12,13 @@ const Page6Right = () => {
         <motion.div
           animate={{ y: 50 }}
           transition={{ type: "spring", stiffness: 100 }}
-          className="flex items-end absolute sm:relative sm:left-[15%] top-[-10%] left-0 z-[2] sm:top-[-50px]"
+          className="flex items-end absolute sm:relative sm:left-[15%] top-[5%] left-0 z-[2] sm:top-[-50px]"
         >
           <Image
             src={img2}
             width={0}
             height={0}
-            className="w-[380px] relative top-[100px]"
+            className="sm:w-[380px] w-[300px] relative top-[100px]"
           />
         </motion.div>
         <motion.div
@@ -30,7 +30,7 @@ const Page6Right = () => {
             src={img1}
             width={0}
             height={0}
-            className="w-[280px] relative right-[100px] top-[50px] "
+            className="sm:w-[280px] w-[200px] relative right-[100px] top-[50px] "
           />
         </motion.div>
       </div>
