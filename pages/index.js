@@ -92,10 +92,10 @@ const index = () => {
       <div className="p-0 m-0 w-full h-screen sm:hidden">
         <Swiper
           pagination={true}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: false,
-          // }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
           modules={[Pagination, Autoplay]}
           className="w-full h-full"
         >
